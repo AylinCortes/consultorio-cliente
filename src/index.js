@@ -11,6 +11,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Router } from "./components/router/Router";
 
+import "./css/styles.css"
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

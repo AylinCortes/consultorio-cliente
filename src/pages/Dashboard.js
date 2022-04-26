@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Axios from "axios";
 
+import { Main } from "./main"
+
 export const Dashboard = (props, { token }) => {
   console.log(props);
   const [isLoading, setIsLoading] = useState(true);
@@ -45,7 +47,7 @@ export const Dashboard = (props, { token }) => {
 
   return (
     <>
-    <h1 style={{color: "black", fontSize:"10rem"}}>Hola!</h1>
+      <Main />
 
       {isLoading ? null : (
         <div className="container-fluid">

@@ -59,13 +59,13 @@ export const Login = ({ setToken }) => {
 
                       <form onSubmit={formik.handleSubmit} className="user">
                         <div className="form-group">
-                          <label htmlFor="email">Email Address</label>
+                          <label htmlFor="email">Email</label>
                           <input
                             id="email"
                             name="email"
                             type="email"
                             aria-describedby="emailHelp"
-                            placeholder="Enter Email Address..."
+                            placeholder="Ingrese su email"
                             className="form-control form-control-user"
                             onChange={formik.handleChange}
                             value={formik.values.email}
@@ -77,12 +77,12 @@ export const Login = ({ setToken }) => {
                           ) : null}
                         </div>
                         <div className="form-group">
-                          <label htmlFor="password">Password</label>
+                          <label htmlFor="password">Contraseña</label>
                           <input
                             id="password"
                             name="password"
                             type="password"
-                            placeholder="Password"
+                            placeholder="Contraseña"
                             className="form-control form-control-user"
                             onChange={formik.handleChange}
                             value={formik.values.password}
